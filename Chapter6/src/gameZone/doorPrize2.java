@@ -1,0 +1,50 @@
+package gameZone;
+
+import java.util.Scanner;
+/**
+ * @author am312792
+ *
+ */
+public class doorPrize2
+{
+
+	public static void main(String[] args) 
+	{
+		int choice;
+		Scanner input = new Scanner(System.in);
+		
+		
+		do{
+		System.out.print("Choose a door between 1 and 3! >>>> ");
+		choice = input.nextInt();
+		//Door number 1
+		if(choice == 1)
+		{
+			System.out.println("You win a brand new car!");
+			
+		}
+		//Door number 2
+		if(choice == 2)
+		{
+			System.out.println("You win a pair of stinky twenty year old....socks!"); 
+			
+		}
+		//Door number 3
+		if(choice == 3)
+		{
+			System.out.println("You win two round-trip tickets, to Norway!");
+			
+		}
+		else
+		{
+			System.out.println("Didn't you read the instructions? There are only three doors, so you get nothing!"); 
+		}
+		//Number higher or equal to 4
+		}while(choice > 4);
+		System.out.println("The END!"); 
+		
+		
+
+	}
+
+}

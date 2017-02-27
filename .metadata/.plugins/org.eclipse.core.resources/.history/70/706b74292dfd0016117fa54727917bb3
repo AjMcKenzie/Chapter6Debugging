@@ -1,0 +1,53 @@
+package gameZone;
+
+import java.util.Scanner;
+
+import javax.swing.JOptionPane;
+/**
+ * @author am312792
+ *
+ */
+public class doorPrize2
+{
+
+	public static void main(String[] args) 
+	{
+		int choice;
+		int counter = 0;
+		String msg = null;
+		Scanner input = new Scanner(System.in);
+		System.out.print("Choose a door between 1 and 3! >>>> ");
+		choice = input.nextInt();
+		
+		while(choice == 2)
+		{
+		//Door number 1
+		if(choice == 1)
+		{
+			msg= "You win a brand new car!";
+			
+		}
+		//Door number 2
+		if(choice == 2)
+		{
+			msg= "You win an old pair of socks!"; 
+			
+		}
+		//Door number 3
+		if(choice == 3)
+		{
+			msg= "You win two tickets, round-trip to Norway!";
+			
+		}
+		//Number higher or equal to 4
+		if(choice >= 4)
+		{
+			msg= "Didn't you read the instructions? There are only three doors, so you get nothing!"; 
+		}
+		++counter;
+		}
+		JOptionPane.showMessageDialog(null, " " + msg + " you won in " + counter);
+
+	}
+
+}

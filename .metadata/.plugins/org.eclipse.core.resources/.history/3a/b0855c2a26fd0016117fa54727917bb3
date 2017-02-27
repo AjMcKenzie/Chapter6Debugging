@@ -1,0 +1,20 @@
+/**
+ * 
+ */
+package excercises;
+
+/**
+ * @author AM312792
+ *
+ */
+public class PizzaChoice {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}
